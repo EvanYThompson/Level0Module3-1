@@ -13,17 +13,27 @@ import org.teachingextensions.logo.Tortoise;
 
 public class TortoiseInSpace implements KeyEventDispatcher {
 
+	
+
 	/*  Make the Tortoise move around the screen when the arrow keys are pressed... */
 	private void moveTortoise(int keyPressed) {
 		// 0. Print out the keyPressed variable and write down the numbers for each arrow key
-
+		System.out.println(keyPressed);
 		// 1. If the up arrow is pressed, move the Tortoise up the screen.
-
+		Tortoise.penUp();
+		if(38==keyPressed){
+		Tortoise.move(3);
+		}
 		// 2. If the down arrow is pressed, move the Tortoise down.
-
+		if(40==keyPressed){
+		Tortoise.turn(90);
+		Tortoise.move(1);
+		}
 		// 3. If the left arrow is pressed, make the tortoise go left. Hint: Make sure to end with the Tortoise facing UP.
+		if(37==keyPressed);
 		
 		// 4. If right is pressed, move the Tortoise right.
+		if(39==keyPressed);
 		
 		// 5. Then move the Tortoise to RD-2D for a surprise! 
 	}
